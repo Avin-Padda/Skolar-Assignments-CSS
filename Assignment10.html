@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images</title>
+    <style>
+        .header {
+            background-color: darkslategrey;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            margin-bottom: 15px;
+            flex-direction: column;
+            width: 100%;
+            min-width: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="header"><h1>Responsive Images</h1></div>
+    <img 
+            style="width:100vw" 
+            src="https://placehold.co/1600x400/png"
+            srcset="
+                https://placehold.co/400x100/png 400w,
+
+                https://placehold.co/800x200/png 800w,
+
+                https://placehold.co/1600x400/png 1600w"/>
+</body>
+</html>

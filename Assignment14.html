@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        #header {
+            background-color: #4f82bd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            animation-name: header;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes header {
+            from {
+                    transform: translateX(-600px);
+            }
+            to {
+                    transform: translateX(0);
+            }
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+        .box {
+            width: 300px;
+            height: 300px;
+            padding: 10px;
+            margin: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #done {
+            animation-name: done;
+            background-color: mediumorchid;
+            animation-duration: 4s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+        }
+        @keyframes done {
+            from {
+                background-color: mediumorchid;
+                width: 300px;
+                height: 300px;
+                animation: 2s;
+                animation-duration: 4s;
+            }
+            to {
+                background-color: turquoise;
+                width: 400px;
+                height: 400px;
+                animation: 2s;
+                animation-duration: 4s;
+            }
+        }
+        #dtwo {
+            animation-name: dtwo;
+            background-color: lightseagreen;
+            animation-duration: 4s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-delay: 1s;
+        }
+        @keyframes dtwo {
+            from {
+                background-color: lightseagreen;
+                width: 300px;
+                height: 300px;
+                animation: 2s;
+                animation-duration: 4s;
+            }
+            to {
+                background-color: lightcoral;
+                width: 400px;
+                height: 400px;
+                animation: 2s;
+                animation-duration: 4s;
+            }
+        }
+        #dthree {
+            animation-name: dthree;
+            background-color: #408b62;
+            animation-duration: 4s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+        }
+        @keyframes dthree {
+            from {
+                background-color: #408b62;
+                width: 300px;
+                height: 300px;
+                animation: 2s;
+                animation-duration: 4s;
+            }
+            to {
+                background-color: #9b4f9e;
+                width: 400px;
+                height: 400px;
+                animation: 2s;
+                animation-duration: 4s;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="header"><h1>Animations</h1></div>
+
+    <div class="container">
+
+        <div class="box" id="done"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus nostrum ducimus, voluptates nulla tempora, et quaerat rerum hic officiis error sunt dignissimos. Officia tempore molestias aut tempora ea. Et, eligendi.</p></div>
+
+        <div class="box" id="dtwo"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga magnam nesciunt voluptatibus similique maiores cum maxime temporibus beatae, consequuntur aliquid. Hic facere quidem cum tempore, iure inventore qui! Eaque, possimus.</p></div>
+
+        <div class="box" id="dthree"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia expedita repellendus vitae? Vero corrupti minus ea laboriosam vitae sapiente, iusto asperiores soluta, eius quod tenetur nisi culpa, perferendis explicabo! Voluptatum!</p></div>
+
+    </div>
+</body>
+</html>

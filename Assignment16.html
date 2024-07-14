@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes and Pseudo-Elements</title>
+    <style>
+        #header {
+            display: flex;
+            height: 80px;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            background-color: coral;
+            transition: 2s;
+        }
+        #header:hover {
+            transition-duration: 3s;
+            background-color: darkcyan;
+            transform: scale(1.1);
+        }
+        .container {
+            display: flex;
+            height: 500px;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+        .box {
+            display: flex;
+            height: 300px;
+            width: 300px;
+            padding: 10px;
+            margin: 8px;
+            align-items: center;
+            justify-content: center;
+        }
+        #box1 {
+            background-color: lightslategray;
+        }
+        #link:active {
+            background-color: crimson;
+            color: lightgray;
+        }
+        #box2 {
+            background-color: teal;
+        }
+        input:focus {
+            background-color: darkviolet;
+            outline: darkturquoise;
+            border: 5px solid lightsalmon;
+        }
+        .container-two {
+            display: flex;
+            height: 500px;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+        .para {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            margin: 8px;
+        }
+        .para:nth-child(odd) {
+            text-transform: uppercase;
+            color: crimson;
+            background-color: darkseagreen;
+        }
+        .para:nth-child(even) {
+            text-transform: capitalize;
+            color: darkorchid;
+            background-color: mediumturquoise;
+        }
+        .container-three {
+            display: flex;
+            flex-direction: column;
+            height: 600px;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+        .parag {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            margin: 8px;
+        }
+        .parag:nth-child(3n) {
+            background-color: lightseagreen;
+            color: silver;
+        }
+        #p1::before {
+            content: "Paragraph One";
+            background-color: lightseagreen;
+            color: palegreen;
+        }
+        #p2:hover::after {
+            content: "Paragraph Two";
+            background-color: darkorange;
+            color: lightcyan;  
+        }
+        #p3::after {
+            content: "Paragraph Three";
+            background-color: indigo;
+            color: ivory;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="header">Pseudo-Classes and Pseudo-Elements</h1>
+
+    <div class="container">
+
+        <div class="box" id="box1"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio vel molestiae excepturi <a href="#" id="link">provident aut aspernatur ut</a> voluptatibus voluptas illum quaerat praesentium laborum alias atque ipsam est nostrum at cupiditate rem.</p></div>
+
+        <div class="box" id="box2"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, quibusdam sunt sequi quisquam tempora saepe nulla ipsum. <label for="input"><b>Enter Here</b></label><input type="text" id="input"></input> Eius earum cupiditate cumque! Ipsa soluta, voluptates consectetur reiciendis nam velit aspernatur accusamus?</p></div>
+
+    </div>
+
+    <div class="container-two">
+
+        <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In explicabo qui unde corporis soluta aperiam praesentium dignissimos eum autem, assumenda cupiditate reiciendis cum dolor? Perferendis qui ducimus molestias praesentium sequi?</p>
+
+        <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel repellat ex ipsam? Ratione voluptates recusandae iste quod repellendus est, distinctio perspiciatis, quam saepe consectetur accusamus animi neque ducimus praesentium rerum.</p>
+
+        <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel repellat ex ipsam? Ratione voluptates recusandae iste quod repellendus est, distinctio perspiciatis, quam saepe consectetur accusamus animi neque ducimus praesentium rerum.</p>
+
+        <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel repellat ex ipsam? Ratione voluptates recusandae iste quod repellendus est, distinctio perspiciatis, quam saepe consectetur accusamus animi neque ducimus praesentium rerum.</p>
+
+        <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel repellat ex ipsam? Ratione voluptates recusandae iste quod repellendus est, distinctio perspiciatis, quam saepe consectetur accusamus animi neque ducimus praesentium rerum.</p>
+
+    </div>
+
+    <div class="container-three">
+
+        <p class="parag" id="p1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In explicabo qui unde corporis soluta aperiam praesentium dignissimos eum autem, assumenda cupiditate reiciendis cum dolor? Perferendis qui ducimus molestias praesentium sequi?</p>
+
+        <p class="parag" id="p2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel repellat ex ipsam? Ratione voluptates recusandae iste quod repellendus est, distinctio perspiciatis, quam saepe consectetur accusamus animi neque ducimus praesentium rerum.</p>
+
+        <p class="parag" id="p3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel repellat ex ipsam? Ratione voluptates recusandae iste quod repellendus est, distinctio perspiciatis, quam saepe consectetur accusamus animi neque ducimus praesentium rerum.</p>
+
+        <p class="parag" id="p4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel repellat ex ipsam? Ratione voluptates recusandae iste quod repellendus est, distinctio perspiciatis, quam saepe consectetur accusamus animi neque ducimus praesentium rerum.</p>
+
+        <p class="parag" id="p5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel repellat ex ipsam? Ratione voluptates recusandae iste quod repellendus est, distinctio perspiciatis, quam saepe consectetur accusamus animi neque ducimus praesentium rerum.</p>
+
+        <p class="parag" id="p6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel repellat ex ipsam? Ratione voluptates recusandae iste quod repellendus est, distinctio perspiciatis, quam saepe consectetur accusamus animi neque ducimus praesentium rerum.</p>
+
+        <p class="parag" id="p7">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel repellat ex ipsam? Ratione voluptates recusandae iste quod repellendus est, distinctio perspiciatis, quam saepe consectetur accusamus animi neque ducimus praesentium rerum.</p>
+
+        <p class="parag" id="p8">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel repellat ex ipsam? Ratione voluptates recusandae iste quod repellendus est, distinctio perspiciatis, quam saepe consectetur accusamus animi neque ducimus praesentium rerum.</p>
+
+        <p class="parag" id="p9">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel repellat ex ipsam? Ratione voluptates recusandae iste quod repellendus est, distinctio perspiciatis, quam saepe consectetur accusamus animi neque ducimus praesentium rerum.</p>
+
+        <p class="parag" id="p10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel repellat ex ipsam? Ratione voluptates recusandae iste quod repellendus est, distinctio perspiciatis, quam saepe consectetur accusamus animi neque ducimus praesentium rerum.</p>
+
+        <p class="parag" id="p11">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel repellat ex ipsam? Ratione voluptates recusandae iste quod repellendus est, distinctio perspiciatis, quam saepe consectetur accusamus animi neque ducimus praesentium rerum.</p>
+
+        <p class="parag" id="p12">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel repellat ex ipsam? Ratione voluptates recusandae iste quod repellendus est, distinctio perspiciatis, quam saepe consectetur accusamus animi neque ducimus praesentium rerum.</p>
+
+    </div>
+</body>
+</html>

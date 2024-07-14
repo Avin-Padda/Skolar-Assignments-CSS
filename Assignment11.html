@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+    <style>
+        h1 {
+            background-color: azure;
+            height: auto;
+            width: 100%;
+            display: flex;
+            position: sticky;
+            top: 0px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            z-index: 1;
+        }
+        .box {
+            height: 100px;
+            width: 100px;
+            border: 1px solid darkblue;
+            margin: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            height: 300px;
+            background-color: beige;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        #item1 {
+            position: static;
+            background-color: mediumslateblue;
+        }
+        #item2 {
+            position: relative;
+            background-color: darkorchid;
+            bottom: 90px;
+            right: 615px
+            ;
+        }
+        #item3 {
+            position: absolute;
+            background-color: lightseagreen;
+            right: 7px;
+            top: 290px;
+        }#item4 {
+            box-sizing: border-box;
+            position: sticky;
+            background-color: dodgerblue;
+            top: 50px;
+            padding: 15px;
+        }
+        #item5 {
+            position: sticky;
+            top: 50px;
+            background-color: lightslategray;
+        }
+        #item6 {
+            position: fixed;
+            background-color: seagreen;
+            left: 834px;
+        }
+        .container-large {
+            display: grid;
+        }
+    </style>
+</head>
+<body>
+    <h1>Positioning</h1>
+
+    <div class="container-large">
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, consectetur aliquam quasi vitae, culpa explicabo voluptatibus debitis eaque obcaecati assumenda ab voluptatem iure aliquid deleniti facere voluptate temporibus sapiente ex.</p>
+    
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus vero distinctio rerum soluta praesentium optio iure ipsum harum est quos repudiandae voluptate magnam labore repellendus perspiciatis eum voluptatem, quam quasi.</p>
+    
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus vero distinctio rerum soluta praesentium optio iure ipsum harum est quos repudiandae voluptate magnam labore repellendus perspiciatis eum voluptatem, quam quasi.</p>
+
+        <div class="container">
+            <div class="box" id="item1">1</div>
+            <div class="box" id="item2">2</div>
+            <div class="box" id="item3">3</div>
+            <div class="box" id="item5">5</div>
+            <div class="box" id="item6">6</div>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ullam voluptate nisi, assumenda eaque asperiores repellendus hic a ipsum minus dignissimos sint iure perspiciatis, autem unde dolorem ipsa quisquam ex.</p>
+            <div class="box" id="item4"><ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ullam voluptate nisi, assumenda eaque asperiores repellendus hic a ipsum minus dignissimos sint iure perspiciatis, autem unde dolorem ipsa quisquam ex.</p>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ullam voluptate nisi, assumenda eaque asperiores repellendus hic a ipsum minus dignissimos sint iure perspiciatis, autem unde dolorem ipsa quisquam ex.</p>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ullam voluptate nisi, assumenda eaque asperiores repellendus hic a ipsum minus dignissimos sint iure perspiciatis, autem unde dolorem ipsa quisquam ex.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ullam voluptate nisi, assumenda eaque asperiores repellendus hic a ipsum minus dignissimos sint iure perspiciatis, autem unde dolorem ipsa quisquam ex.</p>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ullam voluptate nisi, assumenda eaque asperiores repellendus hic a ipsum minus dignissimos sint iure perspiciatis, autem unde dolorem ipsa quisquam ex.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ullam voluptate nisi, assumenda eaque asperiores repellendus hic a ipsum minus dignissimos sint iure perspiciatis, autem unde dolorem ipsa quisquam ex.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ullam voluptate nisi, assumenda eaque asperiores repellendus hic a ipsum minus dignissimos sint iure perspiciatis, autem unde dolorem ipsa quisquam ex.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ullam voluptate nisi, assumenda eaque asperiores repellendus hic a ipsum minus dignissimos sint iure perspiciatis, autem unde dolorem ipsa quisquam ex.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ullam voluptate nisi, assumenda eaque asperiores repellendus hic a ipsum minus dignissimos sint iure perspiciatis, autem unde dolorem ipsa quisquam ex.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ullam voluptate nisi, assumenda eaque asperiores repellendus hic a ipsum minus dignissimos sint iure perspiciatis, autem unde dolorem ipsa quisquam ex.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ullam voluptate nisi, assumenda eaque asperiores repellendus hic a ipsum minus dignissimos sint iure perspiciatis, autem unde dolorem ipsa quisquam ex.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ullam voluptate nisi, assumenda eaque asperiores repellendus hic a ipsum minus dignissimos sint iure perspiciatis, autem unde dolorem ipsa quisquam ex.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ullam voluptate nisi, assumenda eaque asperiores repellendus hic a ipsum minus dignissimos sint iure perspiciatis, autem unde dolorem ipsa quisquam ex.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ullam voluptate nisi, assumenda eaque asperiores repellendus hic a ipsum minus dignissimos sint iure perspiciatis, autem unde dolorem ipsa quisquam ex.</p>
+
+    </div>
+
+</body>
+</html>

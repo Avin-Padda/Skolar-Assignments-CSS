@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Basics</title>
+    <style>
+        .header {
+            display: grid;
+            background-color: lightseagreen;
+            background-image: linear-gradient(to bottom left, lightseagreen, darkorchid);
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+        .grid-container {
+            box-sizing: border-box;
+            background-color: darkseagreen;
+            background-image: linear-gradient(to bottom right, darkseagreen, hotpink);
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: 2fr 1fr 2fr;
+            padding: 15px;
+            grid-gap: 20px;
+        }
+        .grid-item {
+            box-sizing: border-box;
+            background-color: darkmagenta;
+            background-image: linear-gradient(to bottom right, darkmagenta, darkslateblue);
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="header"><h1>Grid</h1></div>
+
+    <div class="grid-container">
+
+        <div class="grid-item"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur quidem placeat totam perferendis odit enim esse! Ad, deleniti mollitia sint architecto eveniet repellendus suscipit ipsam ipsum placeat, rerum, in debitis!</p></div>
+
+        <div class="grid-item"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, commodi. Cum necessitatibus aspernatur quidem, cupiditate dicta, velit soluta maiores natus nobis harum unde earum autem! Sequi accusamus perspiciatis qui error.</p></div>
+
+        <div class="grid-item"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos adipisci consequuntur, error sit deserunt eius ducimus architecto expedita non natus voluptatem, porro esse quo. Accusamus nesciunt animi ullam quibusdam perspiciatis!</p></div>
+
+        <div class="grid-item"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eius optio recusandae architecto odit, officia, ipsam pariatur dolores blanditiis earum a distinctio! Explicabo minima aspernatur facere at assumenda voluptatum vero.</p></div>
+
+        <div class="grid-item"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, esse laudantium. Nesciunt necessitatibus autem non tempore molestiae, quae iusto quidem aspernatur delectus, quo qui doloremque, modi odit aliquid corrupti laudantium.</p></div>
+
+        <div class="grid-item"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi excepturi in architecto dolorum facilis accusantium consequatur deserunt neque vel, asperiores nobis omnis corrupti, adipisci earum magni sed! Hic, veritatis ipsa.</p></div>
+
+        <div class="grid-item"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam quasi velit incidunt. Odio saepe cumque, quibusdam perspiciatis cupiditate deleniti ea aut sint accusantium fugit reiciendis impedit magni eum porro itaque!</p></div>
+
+        <div class="grid-item"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat soluta deleniti impedit earum quam dolor explicabo, voluptates reprehenderit recusandae molestias cupiditate alias modi nesciunt magni quibusdam porro, ipsum asperiores natus.</p></div>
+
+        <div class="grid-item"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis sed ipsa voluptate optio, veritatis expedita dolore totam assumenda libero voluptatum, eligendi eum voluptates qui quaerat? Iusto molestiae molestias magnam ipsum.</p></div>
+    </div>
+</body>
+</html>

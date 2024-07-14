@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Index</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Muli', sans-serif;
+            font-weight: 300;
+            background-color: #30323d;
+            color: #fffffff2;
+        }
+         nav {
+            background: #4d5061;
+            padding: 1em 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        nav a {
+            display: inline-block;
+            padding: .5em;
+            color: inherit;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            color: #e8c547;
+        }
+        .container {
+            min-height: 80vh;
+            display: grid;
+            place-items: center;
+            justify-content: space-evenly;
+        }
+        #item1 {
+            position: absolute;
+            left: 500px;
+            z-index: 1;
+            top: 250px;
+        }
+        #item2 {
+            position: absolute;
+            left: 550px;
+            z-index: 2;
+            top: 350px;
+        }
+        #item3 {
+            position: absolute;
+            left: 600px;
+            z-index: 3;
+            top: 450px;
+        }
+        #item4 {
+            position: absolute;
+            left: 650px;
+            z-index: 4;
+            top: 550px;
+        }
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            height: 200px;
+            width: 200px;
+            border: 2px solid beige;
+            background-color: darkslategrey;
+        }
+        p {
+            position: relative;
+            z-index: 9;
+        }
+        .pic1 {
+            position: absolute;
+            z-index: -1;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">The Team</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    </div>
+    <div class="container">
+        <div class="box" id="item1">Box 1</div>
+        <div class="box" id="item2">Box 2</div>
+        <div class="box" id="item3">Box 3</div>
+        <div class="box" id="item4">Box 4</div>
+
+        <img src="https://images.unsplash.com/photo-1716143169253-36a5f70e14ef?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="pic1">
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, officiis rerum! Cum ipsa eum nam iusto, quaerat excepturi, doloremque perferendis quibusdam cupiditate optio aliquam maiores minima nihil odio earum qui.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sequi exercitationem placeat iste, esse blanditiis dicta. Suscipit nostrum corrupti possimus explicabo repudiandae voluptate nisi in, tempora rem, eius dolorum et!</p>
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi iure blanditiis, eveniet placeat fuga ex eligendi atque labore aut. Dolorum ut nihil veniam quam est dolor debitis blanditiis ex nisi.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae deleniti libero earum voluptas totam modi reprehenderit corrupti. Alias voluptas cumque laboriosam rem incidunt. Doloremque laboriosam molestiae hic ipsa reprehenderit explicabo!</p>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, esse totam voluptatem, qui a illo sit harum nemo distinctio aspernatur, enim possimus? Laudantium libero magni recusandae alias repellendus temporibus voluptatum?</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit at aspernatur dolor ab illo ipsum natus unde deserunt assumenda obcaecati sequi impedit eaque voluptatum illum, minima repudiandae, in inventore consectetur!</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit at aspernatur dolor ab illo ipsum natus unde deserunt assumenda obcaecati sequi impedit eaque voluptatum illum, minima repudiandae, in inventore consectetur!</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit at aspernatur dolor ab illo ipsum natus unde deserunt assumenda obcaecati sequi impedit eaque voluptatum illum, minima repudiandae, in inventore consectetur!</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit at aspernatur dolor ab illo ipsum natus unde deserunt assumenda obcaecati sequi impedit eaque voluptatum illum, minima repudiandae, in inventore consectetur!</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit at aspernatur dolor ab illo ipsum natus unde deserunt assumenda obcaecati sequi impedit eaque voluptatum illum, minima repudiandae, in inventore consectetur!</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit at aspernatur dolor ab illo ipsum natus unde deserunt assumenda obcaecati sequi impedit eaque voluptatum illum, minima repudiandae, in inventore consectetur!</p>
+
+    </div>
+</body>
+</html>

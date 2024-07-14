@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Flexbox</title>
+    <style>
+        .header {
+            background-color: lavender;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+        .container {
+            background-color: bisque;
+            height: 500px;
+            display: flex;
+            align-items: center;
+        }
+        .red {
+            background-color: orangered;
+            background-image: linear-gradient(to bottom left, orangered, teal);
+            display: flex;
+            flex-direction: column;
+        }
+        .green {
+            background-color: yellowgreen;
+            background-image: linear-gradient(to top left, yellowgreen, coral);
+            text-align: center;
+            align-items: center;
+        }
+        .blue {
+            background-color: steelblue;
+            background-image: linear-gradient(to bottom right, steelblue, seagreen);
+            text-align: center;
+            align-items: center;
+        }
+        .container div {
+            margin: 8px;
+            box-sizing: border-box;
+            display: flex;
+            height: 300px;
+            padding: 10px;
+        }
+        .container-two {
+            height: 500px;
+            box-sizing: border-box;
+            background-color: darkcyan;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+        .cont {
+            text-align: center;
+            align-items: center;
+            display: flex;
+            height: 150px;
+            width: 150px;
+            background-color: rgba(72, 61, 139, 0.7);
+            padding: 20px;
+            margin: 15px;
+        }
+        .container-three {
+            margin-top: 15px;
+            box-sizing: border-box;
+            background-color: darkslateblue;
+            background-image: linear-gradient(to bottom left, darkslateblue, teal);
+            height: 1600px;
+            width: 200px;
+            margin-left: 600px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-content: center;
+        }
+        .container-three div {
+            height: 200px;
+            width: 200px;
+        }
+        .flex-container {
+            margin-top: 15px;
+            display: flex;
+            height: 400px;
+            background-color: lightseagreen;
+            background-image: linear-gradient(to top right, lightseagreen, peru);
+            justify-content: center;
+            align-items: center;
+        }
+        .flex-container div {
+            height: 200px;
+            width: 200px;
+            margin: 50px;
+            background-color: lightsteelblue;
+            background-image: linear-gradient(to top left, lightsteelblue, mediumseagreen);
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header"><h1>Flexbox</h1></div>
+
+    <div class="container">
+
+        <div class="red">
+
+            <div class="green"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In omnis qui distinctio eligendi beatae at, numquam nam totam! Dolorem ipsum alias reiciendis delectus, est voluptates recusandae aut fuga dolorum asperiores.</p></div>
+
+            <div class="blue"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia sed illo ab molestias ex ullam vero aut voluptatum voluptates sapiente itaque, deserunt eos, facilis ipsam beatae sunt atque, accusantium cum?</p></div>
+        </div>
+
+        <div class="green"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est at aperiam excepturi optio nihil cumque ullam quis neque. Dignissimos velit vero unde recusandae fugit ipsam sed vel excepturi tempora molestias.</p></div>
+
+        <div class="blue"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos commodi, ut exercitationem minus error accusamus iusto quos eveniet incidunt veniam saepe impedit repudiandae necessitatibus ea sapiente cupiditate nihil nisi. Doloribus?</p></div>
+    </div>
+
+    <div class="container-two">
+
+        <div class="cont"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
+
+        <div class="cont"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
+
+        <div class="cont"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
+
+        <div class="cont"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p></div>
+
+        <div class="cont"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
+
+        <div class="cont"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p></div>
+
+        <div class="cont"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p></div>
+
+        <div class="cont"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
+
+        <div class="cont"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
+    </div>
+
+    <div class="container-three">
+
+        <div style="background-color: cornflowerblue;"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p></div>
+
+        <div style="background-color: violet;"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
+
+        <div style="background-color: teal;"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p></div>
+
+        <div style="background-color: orangered;"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
+
+        <div style="background-color: springgreen"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p></div>
+
+        <div style="background-color: peru;"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p></div>
+    </div>
+
+    <div class="flex-container">
+        <div style="order: 4">1</div>
+
+        <div style="order: 3">2</div>
+
+        <div style="order: 1">3</div>
+
+        <div style="order: 2">4</div>
+    </div>
+</body>
+</html>

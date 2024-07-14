@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        h1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80px;
+        }
+        #done {
+            text-align: center;
+            font-size: 25px;
+            height: 200px;
+            background-color: bisque;
+            padding: 10px;
+            padding-top: 70px;
+            border: 5px solid aquamarine;
+            border-radius: 18px;
+        }
+        #dtwo {
+            margin: 100px;
+            text-align: center;
+            height: 250px;
+            background-color: beige;
+            font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding-top: 90px;
+            box-sizing: border-box;
+            border: 8px ridge darkseagreen;
+        }
+        #one {
+            height: 250px;
+            background-color:aquamarine;
+            background-image: linear-gradient(to bottom right, aquamarine, rgb(95, 13, 150));
+            font-size: 25px;
+            text-align: center;
+            box-sizing: content-box;
+            padding: 80px;
+            padding-top: 230px;
+            border: 5px outset darkmagenta;
+            border-radius: 8px;
+            margin: 50px;
+        }
+        #dthree {
+            font-size: 50px;
+            text-align: center;
+            height: 120px;
+            width: 400px;
+            background-color: darkslateblue;
+            background-image: linear-gradient(to top right, darkslateblue, mediumseagreen);
+            box-sizing: content-box;
+            margin-left: 360px;
+            padding: 100px;
+            padding-top: 170px;
+        }
+    </style>
+</head>
+<body>
+    <h1>This Is A Heading Of Level 2 In CSS Box Model Demonstration</h1>
+
+    <div id="done"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed non vitae architecto optio dolorum animi quo? Exercitationem a, veritatis, quibusdam, dolor earum repudiandae saepe dignissimos modi suscipit fuga possimus! Quos!</p></div>
+
+    <p id="one">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, ab maxime enim quam laboriosam praesentium molestiae sunt magni amet minima maiores veniam error expedita facere ea laudantium asperiores non saepe!</p>
+
+    <div id="dtwo"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati voluptatibus aperiam facere neque architecto inventore ab natus, esse, culpa eaque corporis dolorem! Repudiandae aliquam quis fugiat quod veniam tempore. Pariatur?</p></div>
+
+    <div id="dthree">This Is A Box</div>
+</body>
+</html>

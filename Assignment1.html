@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selectors And Properties</title>
+  <style>
+    h1 {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-style: italic;
+      text-align: right;
+      color: blueviolet;
+      height: 80px;
+    }
+    h2 {
+      text-align: center;
+      background-color: red;
+      height: 80px;
+    }
+    p.even {
+      text-align: right;
+      background-color: crimson;
+      height: 80px;
+    }
+    .odds {
+      text-align: center;
+      background-color: darkslategray;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      height: 80px;
+    }
+    #four {
+      text-align: right;
+      color: maroon;
+      background-color: violet;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      height: 80px;
+    }
+    #six {
+      text-align: left;
+      color:hotpink;
+      background-color: aqua;
+      height: 80px;
+    }
+    a[target="_blank"] {
+      background-color: cornflowerblue;
+      height: 80px;
+    }
+    a#insta:hover{
+      font-size: 20px;
+      background-color: darkred;
+      color: white;
+      height: 80px;
+    }
+    #pone b:first-child {
+      background-color: cadetblue;
+      height: 80px;
+    }
+    .ptwo::first-letter {
+      color:blue;
+      font-size: 35px;
+      height: 80px;
+    }
+    .ptwo::first-line {
+      color: white;
+      background-color: cadetblue;
+      height: 80px;
+    }
+    ::selection {
+      background-color: #40df3b;
+      color: white;
+      height: 80px;
+    }
+    h1::before {
+      content: url(https://github.com/);
+      height: 80px;
+    }
+    .remo {
+      display: none;
+      background-color: darkcyan;
+      padding: 20px;
+      height: 80px;
+    }
+    .lemon:hover p {
+      display: block;
+      height: 80px;
+    }
+    #five::first-letter {
+      background-color:darkmagenta;
+      color: white;
+      font-size: 40px;
+      height: 80px;
+    }
+  </style>
+</head>
+<body>
+  <h1>This Is A Heading Of Level 1</h1>
+  <h2>This Is A Heading Of Level 2</h2>
+  <h3 class="odds">This Is A Heading Of Level 3</h3>
+  <h4 id="four">This Is A Heading Of Level 4</h4>
+  <h5 id="five">This Is A Heading Of Level 5</h5>
+  <h6 id="six">This Is A Heading Of Level 6</h6><hr>
+
+  <p id="pone">This Is A <b>Paragraph</b> Of This Webpage. This Is A <b>Paragraph</b> Of This Webpage.</p><hr>
+
+  <p class="ptwo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, asperiores cumque. Fugit delectus officia reprehenderit tenetur, pariatur facere dolorem itaque! Quibusdam voluptates laudantium impedit sequi iusto veritatis architecto sapiente non!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quasi saepe excepturi quaerat inventore libero adipisci delectus quisquam perspiciatis nisi non, sapiente illo optio recusandae asperiores itaque ducimus placeat. Tenetur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, facere ipsum, amet nostrum rerum dignissimos officia mollitia dolores ab dicta animi in. Tenetur, nihil. Illum numquam nostrum soluta nemo corporis.</p><hr>
+
+  <p class="odds">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint blanditiis dolore possimus fugiat quos recusandae veniam, excepturi quisquam laborum id omnis saepe delectus! Dolore corrupti delectus fugit. Maiores, cumque aperiam.</p><hr>
+
+  <div class="lemon">Hover Here To See Something<p class="remo">Hello..., This Is An Example Of Hover Pseudo-Class</p></div><hr>
+
+  <p class="odds">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis adipisci eveniet expedita illum nobis vitae, dolor id quidem suscipit! Quisquam maiores veniam facilis recusandae esse in! Mollitia tempore nulla animi.</p><hr>
+
+  <p class="even">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit deleniti unde, expedita eos autem consequuntur porro eum velit aliquam commodi qui. Repellat, quae nisi. Sint nulla optio doloremque placeat saepe!</p><hr>
+  <a href="https://www.google.com/" target="_blank">Google</a> <!--background color of the link with the attribute of "_blank will turn cornflowerblue"-->
+  <a href="https://x.com/?lang=en">Twitter</a>
+  <a id="insta" href="https://www.instagram.com/">Instagram</a>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .header {
+            display: flex;
+            background-color: darkolivegreen;
+            height: 70px;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .container {
+            box-sizing: border-box;
+            height: 100%;
+            display: flex;
+            background-color: darkmagenta;
+            align-items: center;
+            justify-content: center;
+        }
+        .item {
+            box-sizing: border-box;
+            height: 200px;
+            width: 300px;
+            background-color: lightblue;
+            margin: 10px;
+            padding: 8px;
+            align-items: center;
+            justify-content: center;
+        }
+        @media (max-width: 455px) {
+            .item {
+                color: steelblue;
+                font-size: 20px;
+                height: 250px;
+                width: 320px;
+                padding: 8px;
+            }
+            .container {
+                box-sizing: border-box;
+                height: 100%;
+                width: 455px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .header {
+                display: flex;
+                flex-direction: column;
+                width: 455px;
+                min-width: auto;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        @media (min-width: 455px) and (max-width: 1080px) {
+            .item {
+                background-color: lightseagreen;
+                color: bisque;
+                font-size: 25px;
+                height: 300px;
+                width: 350px;
+                padding: 10px;
+            }
+            .container {
+                box-sizing: border-box;
+                height: 100%;
+                width: 1080px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+            .header {
+                display: flex;
+                flex-direction: column;
+                width: 1080px;
+                min-width: 455px;
+        }
+    }
+    @media (min-width: 1080px) {
+        .item {
+            background-color: cadetblue;
+            color: azure;
+            font-size: 15px;
+            height: 350px;
+            width: 400px;
+            padding: 15px;
+        }
+        .container {
+                box-sizing: border-box;
+                height: 100%;
+                width: auto;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+        .header {
+                display: flex;
+                flex-direction: column;
+                width: auto;
+                min-width: 1080px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="header"><h1>Responsive</h1></div>
+
+    <div class="container">
+
+        <div class="item"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum voluptatem nemo animi laborum eos voluptas sed, corporis excepturi distinctio magnam quos optio cumque numquam eum accusantium placeat asperiores a ea!</p></div>
+
+        <div class="item"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nihil quis, dolor deleniti eaque hic quos quo obcaecati alias nam in expedita. Distinctio molestiae officiis accusantium maiores aperiam! Consectetur, similique.</p></div>
+
+        <div class="item"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus maiores quibusdam voluptates sapiente recusandae consequatur maxime tempora porro aliquam iusto similique quidem nostrum eos nemo fugiat, voluptas inventore laborum eveniet!</p></div>
+
+        <div class="item"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur maxime blanditiis esse pariatur fugiat omnis aut corporis, dolores voluptate illum hic similique quam accusantium! Impedit necessitatibus dolorum cumque quam omnis.</p></div>
+
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque consectetur aliquid ipsa autem deserunt quam, omnis voluptatum, corporis, aliquam veniam provident vel voluptatem quos? Modi ducimus quam sapiente ullam laudantium.</div>
+
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam error enim nulla mollitia excepturi obcaecati, eveniet amet illum quidem ab quas, eum culpa repellat, explicabo perspiciatis tempora nemo voluptate autem?</div>
+
+    </div>
+</body>
+</html>

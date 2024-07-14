@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Basics</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        #navbar {
+            height: 100px;
+            background-color: lightslategrey;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+            margin: 20px;
+        }
+        h1 {
+            padding-top: 25px;;
+            background-color:crimson;
+            height: 50px;
+            text-align: center;
+            margin-bottom: 10px;
+            margin: 20px;
+        }
+        #container {
+            height: 700px;
+            background-color: cornflowerblue;
+            display: flex;
+            align-items: center;
+            margin: 20px;
+            box-sizing: border-box;
+            justify-content: center;
+        }
+        .lex {
+            display: flex;
+            box-sizing: border-box;
+            background-color: darkolivegreen;
+            height: 200px;
+            padding: 20px;
+            margin: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+        #container-two {
+            height: 500px;
+            background-color: mediumpurple;
+            background-image: linear-gradient(to top right, mediumpurple, mediumseagreen);
+            display: flex;
+            align-items: center;
+            margin: 20px;
+            box-sizing: border-box;
+            justify-content: center;
+        }
+        .para {
+            display: flex;
+            box-sizing: border-box;
+            background-color: darkkhaki;
+            height: 200px;
+            padding: 20px;
+            margin: 10px;
+            align-items: center;
+            justify-content: center;
+        }
+        .ndiv {
+            background-color: rgba(240, 255, 255, 0.5);
+            padding: 5px;
+            align-items: center;
+            margin: 20px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+                    <div class="ndiv"><a href="#">Home </a></div>
+                    <div class="ndiv"><a href="#">Contact </a></div>
+                    <div class="ndiv"><a href="#">About</a></div>
+        </nav>
+    </header>
+    <section>
+        <h1>This Is A Header Of Level 1</h1>
+
+        <div id="container">
+
+        <div class="lex"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus iusto vero quasi dolore ipsa esse maiores est, at natus eum autem distinctio labore veritatis nobis, laboriosam exercitationem consequuntur, vel reprehenderit?</p></div>
+
+        <div class="lex"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo officiis illum ab laboriosam alias est temporibus in quos? A eos itaque obcaecati ipsa corrupti saepe perferendis veniam debitis nihil doloribus!</p></div>
+
+        <div class="lex"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia deserunt maxime optio aliquid eos. Tenetur delectus temporibus laudantium veniam, ipsa beatae, voluptatem provident facilis distinctio inventore magnam ratione dolor voluptatibus!</p></div>
+        </div>
+    </section>
+    <footer>
+        <div id="container-two">
+            <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam ipsam quo dignissimos non unde assumenda, quod eius sit, enim sunt vero aspernatur aut beatae, cum nostrum labore in quidem dolorum.</p>
+
+            <p class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus voluptatem ratione perferendis. Maxime non dolor laborum, tempora esse provident enim nulla deleniti nesciunt delectus eveniet a expedita nobis consectetur animi.</p>
+
+            <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus sunt sapiente eaque iure et quas voluptatum blanditiis deleniti expedita amet, recusandae pariatur corrupti laborum, veniam ut magni, beatae odit impedit.</p>
+        </div>
+    </footer>
+</body>
+</html>

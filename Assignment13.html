@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <style>
+        h1 {
+            display: flex;
+            height: 70px;
+            width: 100%;
+            background-color: aquamarine;
+            align-items: center;
+            justify-content: center;
+            transition: 2s;
+        }
+        h1:hover {
+            background-color: cornflowerblue;
+            transition-duration: 1s;
+            
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+            display: flex;
+            padding: 10px;
+            margin: 5px;
+            align-items: center;
+            justify-content: center;
+            place-items: center;
+            background-color: #af67fa;
+            background-image: linear-gradient(to bottom right, #af67fa, #f098af);
+            transition: 2s;
+        }
+        #done:hover {
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+            height: 300px;
+            background-image: linear-gradient(to bottom right, #af76fa, #af76fa);
+        }
+        #dtwo:hover {
+            transition-duration: 1s;
+            transition-timing-function: ease;
+            height: 300px;
+            background-image: linear-gradient(to bottom right, #af76fa, #af76fa);
+        }
+        #dthree:hover {
+            transition-duration: 1s;
+            transition-timing-function: ease-in;
+            height: 300px;
+            background-image: linear-gradient(to bottom right, #af76fa, #af76fa);
+        }
+        #dfour:hover {
+            transition-duration: 1s;
+            transition-timing-function: ease-out;
+            height: 300px;
+            background-image: linear-gradient(to bottom right, #af76fa, #af76fa);
+        }
+        #dfive:hover {
+            transition-duration: 1s;
+            transition-timing-function: steps(5);
+            height: 300px;
+            background-image: linear-gradient(to bottom right, #af76fa, #af76fa);
+        }
+        /* Container Two*/
+        .container-two {
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+        }
+        .boxq {
+            height: 400px;
+            width: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ba657c;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        #boxb {
+            transition: width 2s, height 2s, transform 2s;
+            
+        }
+        #boxb:hover {
+            transition-duration: 2s;
+            background-color: #267554;
+            transform: rotate(360deg);
+        }
+
+        #boxo {
+            transition: width 2s, height 2s, transform 2s;
+        }
+        #boxo:hover {
+            transition-duration: 2s;
+            background-color: #206288;
+            transform: translate(430px, 0px);
+            transition-delay: 4s;
+        }
+
+        #boxx {
+            transition: width 2s, height 2s, transform 2s;
+        }
+        #boxx:hover {
+            transition-duration: 2s;
+            background-color: #203169;
+            transform: skewX(10deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Transitions</h1>
+
+    <div class="container">
+
+        <div class="box" id="done">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde atque velit sit quas laboriosam sunt quo cum ullam quisquam. Illo quam sapiente vitae nostrum saepe delectus dolores aliquam totam culpa?</div>
+
+        <div class="box" id="dtwo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi at in veniam eveniet enim voluptatibus expedita unde, doloremque nam libero fuga nihil dolores omnis error debitis modi eum deserunt nisi.</div>
+
+        <div class="box" id="dthree">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, perspiciatis! Dolor animi quae, ipsum repudiandae velit, ex possimus suscipit ipsam labore, debitis voluptate placeat eius exercitationem minus numquam architecto officia!</div>
+
+        <div class="box" id="dfour">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis accusamus obcaecati esse qui modi, enim itaque ea ipsam deleniti molestiae dolor provident possimus suscipit mollitia minima omnis? Perspiciatis, perferendis distinctio!</div>
+
+        <div class="box" id="dfive">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, dolorem autem nesciunt sit sed ex ab quidem aperiam repudiandae odio fugit doloribus modi, veniam ratione sint laborum aliquam similique. Cum.</div>
+
+    </div>
+
+    <div class="container-two">
+        <div class="boxq" id="boxb"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates quis doloremque non incidunt, officia ducimus fuga dicta recusandae, mollitia, amet error sunt dolores consequuntur voluptas consequatur. Hic ducimus ad laboriosam?</p></div>
+
+        <div class="boxq" id="boxo"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut magni adipisci veniam dignissimos architecto, iure id commodi officia nostrum dolorum assumenda fugiat, hic debitis! Odit eligendi facilis recusandae quis corporis.</p></div>
+
+        <div class="boxq" id="boxx"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae doloremque velit quisquam enim nemo voluptates iste quam blanditiis magnam, in distinctio quos. Neque ducimus dolor earum quo perspiciatis, nulla vero!</p></div>
+    </div>
+</body>
+</html>
